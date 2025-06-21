@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Register – HealthCare+</title>
+  <link rel="stylesheet" href="sample.css" />
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginForm = document.getElementById('login-form');
+      const registerForm = document.getElementById('register-form');
+      const toggleToRegister = document.getElementById('to-register');
+      const toggleToLogin = document.getElementById('to-login');
+
+      toggleToRegister.addEventListener('click', () => {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+      });
+
+      toggleToLogin.addEventListener('click', () => {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">HealthCare+</div>
+      <ul>
+        <li><a href="sample.html">Home</a></li>
+        <li><a href="sample.html#services">Services</a></li>
+        <li><a href="sample.html#about">About</a></li>
+        <li><a href="sample.html#contact">Contact</a></li>
+        <li><a href="login.html" class="btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>HealthCare+</h1>
+    <p>Secure healthcare management portal</p>
+  </section>
+
+  <div class="form-container">
+    <form id="login-form">
+      <h2>Login</h2>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required />
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+      
+      <button type="submit">Login</button>
+      <p>New user? <a href="#" id="to-register">Register here</a></p>
+    </form>
+
+    <form id="register-form" style="display: none;">
+      <h2>Register</h2>
+      <label for="new-username">Username</label>
+      <input type="text" id="new-username" name="new-username" required />
+      
+      <label for="new-password">Password</label>
+      <input type="password" id="new-password" name="new-password" required />
+      
+      <button type="submit">Register</button>
+      <p>Already have an account? <a href="#" id="to-login">Login here</a></p>
+    </form>
+  </div>
+
+  <div id="status-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <p id="modal-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 HealthCare+ | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

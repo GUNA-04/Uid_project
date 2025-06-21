@@ -1,0 +1,93 @@
+sample<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin management for HealthCare+ system.">
+    <meta name="keywords" content="healthcare, admin management, doctor management">
+    <meta name="author" content="HealthCare+">
+    <title>Admin Management - HealthCare+</title>
+    <link rel="stylesheet" href="sample.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthCare+</div>
+            <ul>
+                <li><a href="sample.html">Home</a></li>
+                <li><a href="sample.html#services">Services</a></li>
+                <li><a href="sample.html#about">About</a></li>
+                <li><a href="sample.html#contact">Contact</a></li>
+                <li><a href="sample.html" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Admin Management</h1>
+        <p>Manage doctors, appointments, and patient data.</p>
+    </section>
+
+    <div class="admin-container">
+        <h2>Admin Options</h2>
+        <div class="admin-options">
+            <div class="admin-option">
+                <h3>Manage Doctors</h3>
+                <p>Add, remove, or update doctor details.</p>
+                <form id="doctor-manage-form">
+                    <label for="doctor-name">Doctor Name:</label>
+                    <input type="text" id="doctor-name" name="doctor-name" required>
+                    <label for="specialty">Specialty:</label>
+                    <input type="text" id="specialty" name="specialty" required>
+                    <button type="submit">Add Doctor</button>
+                </form>
+                <table class="records-table" id="doctors-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Specialty</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="admin-option">
+                <h3>Manage Appointments</h3>
+                <p>View and schedule patient appointments.</p>
+                <table class="records-table" id="appointments-table">
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="admin-option">
+                <h3>Manage Patients</h3>
+                <p>View and update patient records securely.</p>
+                <table class="records-table" id="patients-table">
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Name</th>
+                            <th>Last Visit</th>
+                            <th>Diagnosis</th>
+                            <th>Prescriptions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Healthcare+ | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

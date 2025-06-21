@@ -1,0 +1,68 @@
+sample<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book doctor appointments with HealthCare+.">
+    <meta name="keywords" content="healthcare, doctor consultation, appointment booking">
+    <meta name="author" content="HealthCare+">
+    <title>Doctor Consultation - HealthCare+</title>
+    <link rel="stylesheet" href="sample.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthCare+</div>
+            <ul>
+                <li><a href="sample.html">Home</a></li>
+                <li><a href="sample.html#services">Services</a></li>
+                <li><a href="sample.html#about">About</a></li>
+                <li><a href="sample.html#contact">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Doctor Consultation</h1>
+        <p>Book appointments with experienced doctors for expert medical advice.</p>
+    </section>
+
+    <div class="form-container">
+        <form id="doctor-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="Dr. Smith (Cardiologist)">Dr. Smith (Cardiologist)</option>
+              
+            </select>
+
+            <button type="submit">Book Appointment</button>
+            <section id="doctor-list">
+  <h2>Available Doctors</h2>
+  <ul id="doctors-container"></ul>
+</section>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Healthcare+ | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
